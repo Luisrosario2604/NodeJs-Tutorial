@@ -1,8 +1,10 @@
-var admin = require("firebase-admin");
+const admin = require("firebase-admin");
 
-var serviceAccount = require("path/to/serviceAccountKey.json");
+const serviceAccount = require("./ PATH OF THE KEY.JSON");
 
-admin.initializeApp({
+const firebaseApp = admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://NAME-OF-YOUR-DB.com"
+  databaseURL: "https://NAME-OF-YOUR-DATABASE.com"
 });
+
+console.log(firebaseApp);
